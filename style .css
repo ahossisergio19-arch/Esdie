@@ -60,3 +60,27 @@ header .logo {
         height: auto !important;
     }
 }
+/* Styles pour le pied de page */
+footer {
+    background-color: #008080; /* Couleur vive (Cyan Teal) - Vous pouvez la changer (ex: #FF4500 pour Orange Vif) */
+    color: #ffffff;           /* Texte blanc pour le contraste */
+    padding: 30px 10px;       /* Espace intérieur (haut/bas) */
+    text-align: center;       /* Centre tout le contenu */
+    font-size: 14px;          /* Taille de police standard */
+    line-height: 1.5;         /* Espacement des lignes */
+}
+
+/* Style pour le titre "TikTok" dans le pied de page */
+footer a, footer p {
+    color: #ffffff; /* S'assure que les liens et paragraphes sont blancs sur le fond sombre */
+    text-decoration: none; /* Supprime le soulignement des liens si besoin */
+    display: block; /* S'assure que le titre TikTok occupe toute la largeur */
+    margin: 5px 0;
+}
+
+/* Règle spécifique pour le lien TikTok dans le pied de page */
+.footer-tiktok-link {
+    font-size: 1.2em; /* Rend le texte du lien un peu plus grand */
+    font-weight: bold;
+    color: #00FFFF; /* Une couleur encore plus vive pour TikTok (Cyan) */
+}
