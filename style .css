@@ -40,16 +40,23 @@ footer a:hover {
         padding: 5px 0;
     }
 }
-/* Contrôle de la taille du logo dans l'en-tête (Header) */
+/* Règle de taille FORCÉE pour le logo */
 .logo {
-    max-width: 150px; /* Limite la largeur maximale du logo à 150 pixels */
-    height: auto;    /* Maintient la proportion de l'image */
-    display: block;  /* Aide à mieux gérer l'alignement si nécessaire */
+    width: 150px !important;  /* Définit une largeur fixe */
+    height: auto !important; /* Maintient les proportions */
 }
 
-/* Si vous voulez une taille spécifique pour les téléphones */
+/* Ajustement possible si le logo est à l'intérieur d'un en-tête ou autre élément */
+header .logo {
+    width: 150px !important;
+    height: auto !important;
+    display: block;
+}
+
+/* Règle pour mobile (s'assure que même sur les petits écrans, il est contrôlé) */
 @media (max-width: 600px) {
-    .logo {
-        max-width: 120px; /* Rendre le logo légèrement plus petit sur mobile */
+    .logo, header .logo {
+        width: 120px !important;
+        height: auto !important;
     }
 }
