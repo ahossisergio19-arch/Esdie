@@ -40,3 +40,16 @@ footer a:hover {
         padding: 5px 0;
     }
 }
+/* Contrôle de la taille du logo dans l'en-tête (Header) */
+.logo {
+    max-width: 150px; /* Limite la largeur maximale du logo à 150 pixels */
+    height: auto;    /* Maintient la proportion de l'image */
+    display: block;  /* Aide à mieux gérer l'alignement si nécessaire */
+}
+
+/* Si vous voulez une taille spécifique pour les téléphones */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 120px; /* Rendre le logo légèrement plus petit sur mobile */
+    }
+}
